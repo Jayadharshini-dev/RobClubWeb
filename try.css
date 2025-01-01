@@ -50,10 +50,11 @@ nav a:hover {
 
 .hero h2 {
     margin: 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.hero p {
-    margin: 0.5rem 0 0;
+.hero h2:hover {
+    transform: scale(1.1); /* Slightly enlarge the text on hover */
 }
 
 body {
