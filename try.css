@@ -1,0 +1,670 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+  
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+header img {
+    height: 50px;
+    margin-right: 1rem;
+}
+#logo {
+    width: 100px; 
+    height: auto; 
+  }
+  
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #444;
+    padding: 0.5rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #444, #222);
+    padding: 2rem 0;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.hero p {
+    margin: 0.5rem 0 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container {
+    position: fixed; /* Position it above everything */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Hide the popup initially */
+    opacity: 0; /* Invisible initially */
+    transition: visibility 0s, opacity 0.3s ease; /* Fade-in effect */
+}
+
+.popup-container.show {
+    visibility: visible; /* Make it visible */
+    opacity: 1; /* Fully opaque */
+}
+
+.popup-content {
+    background: #dcdcdc; /* White background for the popup box */
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Positioning for the close icon */
+    max-width: 400px;
+    width: 90%;
+}
+
+.popup-text {
+    font-size: 1.5em; /* Size of the text */
+    color: #000; /* Black color for the text */
+    margin: 0;
+}
+
+.close-icon {
+    position: absolute; /* Position it inside the popup box */
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em; /* Size of the cross symbol */
+    font-weight: bold;
+    color: #000; /* Black color for the cross icon */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.close-icon:hover {
+    color: black; /* Red color on hover for the cross symbol */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section for the Menu */
+.menu-section {
+    background-color: #444; /* Grey background for the section */
+    padding: 40px 40px; /* Add padding around the section */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the image and menu boxes */
+    align-items: center; /* Vertically align content */
+}
+
+/* Image Styling */
+.section-image {
+    max-width: 40%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Menu Container */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px); /* Two columns, each 200px wide */
+    grid-gap: 40px; /* Space between boxes */
+    justify-content: flex-start; /* Align the boxes to the right */
+    width: 40%; /* Adjust width of the menu container */
+    margin-left: -100px; /* Move the menu boxes slightly to the left */
+}
+
+/* Menu Boxes */
+.menu-box {
+    background: linear-gradient(to right, #0998a2, #0b9ace); /* Solid gradient of blue */
+    padding: 15px 20px; /* Increased padding */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center align text inside the box */
+    color: #fff; /* White text for contrast */
+}
+
+.menu-box:hover {
+    background: linear-gradient(to right, #1976D2, #032e60); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    
+}
+
+/* Menu Links */
+.menu-item {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Slightly larger font size */
+    display: block; /* Make the link fill the box */
+}
+
+
+
+
+
+.content {
+    display: flex; /* Use flexbox to arrange elements side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align items */
+    background-color: #444; /* Set the background color */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 0 0 60%; /* Text takes up 60% of the space */
+    padding-right: 20px; /* Optional: Add some spacing between text and image */
+}
+
+.image-container {
+    flex: 0 0 40%; /* Image takes up 40% of the space */
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2em; /* Adjust the size of the title */
+    margin: 0; /* Remove margin for the title */
+    color: #f8f8f8; /* Lighter shade of white for the title */
+}
+
+.description {
+    font-size: 1.2em; /* Adjust the size of the paragraph */
+    margin-top: 10px; /* Add space between the title and paragraph */
+    color: #dcdcdc; /* Lighter shade of white for the paragraph text */
+}
+
+.image {
+    max-width: 100%; /* Make sure the image does not exceed container width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    background-color: #444;
+}
+.section-title {
+    font-family: 'Courier New', monospace; /* Change to your preferred font */
+    font-size: 2em; /* Adjust the size of the heading */
+    font-weight: bold; /* Make the heading bold */
+    color: #06f1e1; /* Set the color of the heading */
+  }
+
+/* Main content container */
+.content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Titles and Paragraph Section */
+.text-section {
+    display: flex; /* Use Flexbox for side-by-side layout */
+    justify-content: space-between; /* Ensure space between the titles and paragraph */
+    align-items: flex-start; /* Align titles and paragraph to the top */
+    margin-bottom: 30px; /* Add space between text section and sliders */
+}
+
+/* Titles (Left Side) */
+.titles {
+    display: flex;
+    flex-direction: column; /* Stack titles vertically */
+    margin-right: 20px; /* Add space between titles and paragraph */
+}
+
+.section-title {
+    font-family: 'Courier New', monospace; /* Change to your preferred font */
+    font-size: 2em;
+    font-weight: bold; /* Make the heading bold */
+    color: #06f1e1;
+    margin-bottom: 0; /* Space below the first title */
+}
+
+.sub-title {
+    font-family: 'Calibri', sans-serif; /* Change to your preferred font */
+    font-size: 1.8em;
+    font-weight: bold; /* Make the heading bold */
+    color: white;
+}
+
+/* Paragraph (Right Side) */
+.paragraph {
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.6;
+    max-width: 60%; /* Optional: limit the width of the paragraph */
+}
+
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background: linear-gradient(135deg, #0998a2, #0b9ace); /* Gradient from blue to light blue */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-content {
+    display: flex; /* Use flexbox to align image and text side by side */
+    align-items: center;
+    padding: 20px;
+}
+
+.box-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box-text {
+    flex: 1; /* Make text section take remaining space */
+}
+
+.box-title {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.box-paragraph {
+    margin: 5px 0 0;
+    color: white;
+}
+
+.box:hover {
+    background: linear-gradient(to right, #1976D2, #032e60); /* Darker gradient on hover */
+    transform: translateY(-5px); /* Lift the box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover .box-image {
+    transform: scale(1.1); /* Slight zoom effect on image */
+}
+
+
+/* Slider Container */
+.slider-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.slider-container h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between slides */
+    padding: 20px;
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+
+
+/* Slide Container */
+.slide {
+    flex: 0 0 300px; /* Set slide width */
+    text-align: center;
+    background-color: #7f8c8d; /* Changed to grey */
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Robot Head */
+.robot-head {
+    width: 100px;
+    height: 80px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+/* Robot Ears */
+.ear {
+    width: 20px;
+    height: 40px;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 20px;
+}
+
+.left-ear {
+    left: -25px;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-ear {
+    right: -25px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Robot Eyes */
+.eye {
+    width: 20px;
+    height: 20px;
+    background-color: #ecf0f1;
+    border: 2px solid #34495e;
+    border-radius: 50%;
+}
+
+/* Robot Body */
+.robot-body {
+    background-color: #bdc3c7;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.slide-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.slide-title {
+    font-size: 1.6em;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.slide-paragraph {
+    font-size: 1em;
+    color: black;
+    line-height: 1.4;
+}
+
+/* Robot Hands */
+.hand {
+    width: 20px;
+    height: 60px;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-hand {
+    left: -25px;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-hand {
+    right: -25px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Robot Legs */
+.legs {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased gap between legs */
+    margin-top: 10px;
+}
+
+.leg {
+    width: 20px;
+    height: 40px;
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+/* Add hover effect for slides */
+.slide:hover {
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px); /* Lift the box slightly */
+}
+
+/* Styling specific to the new layout */
+.container.text-image-layout {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between text and image */
+    padding: 20px;
+    gap: 10px; /* Space between text and image */
+}
+
+.container.text-image-layout .text-container {
+    flex: 3; /* Text container takes 60% (3 parts out of 5) */
+}
+
+.container.text-image-layout .text-container .title {
+    font-size: 2em;
+    font-weight: bold;
+    color: white; /* Dark color for title */
+    margin-bottom: 5px;
+}
+
+.container.text-image-layout .text-container .description {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.4em;
+    color: #dcdcdc; /* Medium color for description */
+    line-height: 1.5;
+}
+
+.container.text-image-layout .image-container {
+    flex: 2; /* Image container takes 40% (2 parts out of 5) */
+    text-align: center; /* Center image horizontally */
+}
+
+.container.text-image-layout .image-container .image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+/* Scoped Styling for Stats Section */
+#stats-section {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 40px 0; /* Added padding for spacing */
+    text-align: center; /* Center-align the title */
+}
+
+#stats-section .stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width of the section */
+}
+
+#stats-section .stats-box {
+    background: linear-gradient(to right, #1661ac, #032e60);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 800px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+#stats-section .stat-item {
+    position: relative;
+}
+
+#stats-section .stat-left {
+    text-align: left;
+}
+
+#stats-section .stat-right {
+    text-align: right;
+    margin-top: 20px; /* Adjust staggered positioning */
+}
+
+#stats-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#stats-section p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#stats-section .highlight {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+#stats-section hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin: 10px 0;
+}
+
+#stats-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #06f1e1;
+}
+
+.contact-description {
+    font-family: 'Calibri', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Subtle description color */
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between boxes */
+}
+
+/* Social Link Box Styling */
+.social-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px; /* Rectangular width */
+    height: 60px; /* Rectangular height */
+    background-color: #333; /* Box background color */
+    color: #fff;
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 10px; /* Padding inside the box */
+    gap: 15px; /* Space between the icon and the text */
+}
+
+.social-link:hover {
+    background-color: #7a7b7c; /* Highlight color on hover */
+    transform: translateY(-5px); /* Lift the box slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Icon Styling */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+/* Text Styling */
+.social-link span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: left; /* Align text to the left inside the box */
+}
+
+  
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+

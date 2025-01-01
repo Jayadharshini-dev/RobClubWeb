@@ -1,0 +1,62 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background: linear-gradient(135deg, #0998a2, #0b9ace); /* Gradient from blue to light blue */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-content {
+    display: flex; /* Use flexbox to align image and text side by side */
+    align-items: center;
+    padding: 20px;
+}
+
+.box-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box-text {
+    flex: 1; /* Make text section take remaining space */
+}
+
+.box-title {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.box-paragraph {
+    margin: 5px 0 0;
+    color: white;
+}
+
+.box:hover {
+    background: linear-gradient(to right, #1976D2, #032e60); /* Darker gradient on hover */
+    transform: translateY(-5px); /* Lift the box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover .box-image {
+    transform: scale(1.1); /* Slight zoom effect on image */
+}
